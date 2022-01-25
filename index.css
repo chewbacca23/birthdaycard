@@ -1,0 +1,106 @@
+:root {
+    --smaller: .75;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    align-items: center;
+    /* insert the background image from the images folder */
+    background-image: url(henrik.jpg);
+    /* resize image */
+    background-size: 800px;
+    background-color: darkblue;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family:  'Pathway Gothic One', sans-serif;
+  }
+  
+  .container {
+    color: rgb(19, 48, 141);
+    text-shadow: 1px 1px 1px rgb(64, 192, 186); 
+
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(240, 6, 6);
+    
+    position: absolute;
+    top: 50%;
+    
+    width: 100%;
+    
+  }
+  
+  h1 {
+    font-weight: normal;
+    color: white;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    font-size: 3em;
+  }
+  
+  li {
+    background-color: darkblue;
+    display: inline-block;
+    color: white;
+    font-size: 2em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+  }
+  
+  li span {
+      background-color: darkblue;
+      color: white;
+    display: block;
+    font-size: 4.5rem;
+  }
+  
+  .emoji {
+    display: none;
+    padding: 1rem;
+  }
+  
+  .emoji span {
+    background-color: darkblue;
+    color: white;
+    font-size: 4rem;
+    padding: 0 .5rem;
+  }
+  
+  @media all and (max-width: 768px) {
+    h1 {
+      font-size: calc(1.5rem * var(--smaller));
+    }
+    
+    li {
+      font-size: calc(1.125rem * var(--smaller));
+    }
+    
+    li span {
+      font-size: calc(3.375rem * var(--smaller));
+    }
+  }
+
+  /* rz bkg fr scrn sz 500 */
+  @media all and (max-width: 500px) {
+    body {
+      background-image: url(henrik.jpg);
+      /* transition smooth */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: background-image 1s;
+
+
+    }
+  }
