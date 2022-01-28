@@ -1,5 +1,8 @@
 :root {
-    --smaller: .75;
+    /* --smaller: .75; */
+  }
+  img {
+    background-image: url(./img/china.jpg);
   }
   
   * {
@@ -14,9 +17,9 @@
   }
   
   body {
-    align-items: center;
+    align-items: bottom;
     /* insert the background image from the images folder */
-    background-image: url(henrik.jpg);
+    background-image: url(./img/china.jpg);
     /* resize image */
     background-size: 800px;
     background-color: darkblue;
@@ -33,7 +36,7 @@
     text-align: center;
     background-color: rgb(240, 6, 6);
     
-    position: absolute;
+    position: re;
     top: 50%;
     
     width: 100%;
